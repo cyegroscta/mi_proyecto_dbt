@@ -1,0 +1,37 @@
+
+  
+    
+    
+
+    create  table
+      "airbyte_curso"."main"."obt_pokemon__dbt_tmp"
+  
+    as (
+      -- One Big Table final para análisis
+WITH pokemon AS (
+SELECT
+
+* FROM "airbyte_curso"."main"."int_pokemon_with_types"
+
+),
+final AS (
+SELECT pokemon_id,
+pokemon_name,
+height,
+weight,
+base_experience,
+type_primary,
+type_secondary,
+CASE
+WHEN base_experience >= 200 THEN 'Legendary'
+WHEN base_experience >= 100 THEN 'Strong'
+ELSE 'Normal'
+END AS power_tier
+FROM pokemon
+)
+SELECT
+
+* FROM final
+    );
+  
+  
