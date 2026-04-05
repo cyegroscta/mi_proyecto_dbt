@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: stg_pokemon
+    description: "Datos de Pokémon limpios desde la API"
+    columns:
+      - name: pokemon_id
+        description: "ID único del Pokémon"
+        tests:
+          - unique
+          - not_null
+      - name: pokemon_name
+        description: "Nombre del Pokémon"
+        tests:
+          - not_null
+      - name: height
+        tests:
+          - not_null
+      - name: weight
+        tests:
+          - not_null
+
+  - name: stg_trainers
+    columns:
+      - name: trainer_id
+        tests:
+          - unique
+          - not_null
