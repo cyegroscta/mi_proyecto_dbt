@@ -1,0 +1,54 @@
+[0m08:58:26.735488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e13986bb0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e1397462830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e13974627d0>]}
+
+
+============================== 08:58:26.737623 | 482dc79a-b8d5-4bd6-9377-847fa3ff480e ==============================
+[0m08:58:26.737623 [info ] [MainThread]: Running with dbt=1.11.7
+[0m08:58:26.737966 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'use_colors': 'True', 'static_parser': 'True', 'no_print': 'None', 'target_path': 'None', 'version_check': 'True', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'introspect': 'True', 'log_cache_events': 'False', 'write_json': 'True', 'invocation_command': 'dbt debug', 'fail_fast': 'False', 'profiles_dir': '/home/cristian/.dbt', 'quiet': 'False', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'log_path': '/home/cristian/Documentos/maestria/introduccion/mi_proyecto_dbt/logs'}
+[0m08:58:26.742579 [info ] [MainThread]: dbt version: 1.11.7
+[0m08:58:26.742892 [info ] [MainThread]: python version: 3.10.12
+[0m08:58:26.743099 [info ] [MainThread]: python path: /home/cristian/Documentos/maestria/introduccion/dbt-env/bin/python3
+[0m08:58:26.743289 [info ] [MainThread]: os info: Linux-6.8.0-106-generic-x86_64-with-glibc2.35
+[0m08:58:26.821229 [info ] [MainThread]: Using profiles dir at /home/cristian/.dbt
+[0m08:58:26.821607 [info ] [MainThread]: Using profiles.yml file at /home/cristian/.dbt/profiles.yml
+[0m08:58:26.821831 [info ] [MainThread]: Using dbt_project.yml file at /home/cristian/Documentos/maestria/introduccion/mi_proyecto_dbt/dbt_project.yml
+[0m08:58:26.822697 [info ] [MainThread]: adapter type: duckdb
+[0m08:58:26.822961 [info ] [MainThread]: adapter version: 1.10.1
+[0m08:58:26.895569 [info ] [MainThread]: Configuration:
+[0m08:58:26.895938 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m08:58:26.896147 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m08:58:26.896318 [info ] [MainThread]: Required dependencies:
+[0m08:58:26.896500 [debug] [MainThread]: Executing "git --help"
+[0m08:58:26.897885 [debug] [MainThread]: STDOUT: "b"uso: git [--version] [--help] [-C <ruta>] [-c <nombre>=<valor>]\n            [--exec-path [= <path>]] [--html-path] [--man-path] [--info-path]\n            [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n            [--git-dir=<ruta>] [--work-tree=<ruta>] [--namespace=<nombre>]\n            [--super-prefix=<ruta>] [--config-env=<nombre>=<envvar>]\n            <comando> [<args>]\n\nEstos son comandos comunes de Git usados en varias situaciones:\n\ncomenzar un \xc3\xa1rea de trabajo (mira tambi\xc3\xa9n: git help tutorial)\n   clone     Clonar un repositorio dentro de un nuevo directorio\n   init      Crear un repositorio de Git vac\xc3\xado o reinicia el que ya existe\n\ntrabajar en los cambios actuales (mira tambi\xc3\xa9n: git help everyday)\n   add       Agregar contenido de archivos al \xc3\xadndice\n   mv        Mover o cambiar el nombre a archivos, directorios o enlaces simb\xc3\xb3licos\n   restore   Restaurar archivos del \xc3\xa1rbol de trabajo\n   rm        Borrar archivos del \xc3\xa1rbol de trabajo y del \xc3\xadndice\n\nexaminar el historial y el estado (mira tambi\xc3\xa9n: git help revisions)\n   bisect    Usar la b\xc3\xbasqueda binaria para encontrar el commit que introdujo el bug\n   diff      Mostrar los cambios entre commits, commit y \xc3\xa1rbol de trabajo, etc\n   grep      Imprimir las l\xc3\xadneas que concuerden con el patr\xc3\xb3n\n   log       Mostrar los logs de los commits\n   show      Mostrar varios tipos de objetos\n   status    Mostrar el estado del \xc3\xa1rbol de trabajo\n\ncrecer, marcar y ajustar tu historial com\xc3\xban\n   branch    Listar, crear, o borrar ramas\n   commit    Grabar los cambios al repositorio\n   merge     Juntar dos o m\xc3\xa1s historiales de desarrollo juntos\n   rebase    Volver a aplicar commits en la punta de otra rama\n   reset     Reiniciar el HEAD actual a un estado espec\xc3\xadfico\n   switch    Cambiar de branch\n   tag       Crear, listar, borrar o verificar un objeto de tag firmado con GPG\n\ncolaborar (mira tambi\xc3\xa9n: git help workflows)\n   fetch     Descargar objetos y referencias de otro repositorio\n   pull      Realizar un fetch e integra con otro repositorio o rama local\n   push      Actualizar referencias remotas junto con sus objetos asociados\n\n'git help -a' y 'git help -g' listan los subcomandos disponibles y algunas\ngu\xc3\xadas de concepto. Consulta 'git help <command>' o 'git help <concepto>'\npara leer sobre un subcomando o concepto espec\xc3\xadfico.\nMira 'git help git' para una vista general del sistema.\n""
+[0m08:58:26.898186 [debug] [MainThread]: STDERR: "b''"
+[0m08:58:26.898387 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m08:58:26.898578 [info ] [MainThread]: Connection:
+[0m08:58:26.898774 [info ] [MainThread]:   database: airbyte_curso
+[0m08:58:26.898964 [info ] [MainThread]:   schema: main
+[0m08:58:26.899128 [info ] [MainThread]:   path: md:airbyte_curso
+[0m08:58:26.899285 [info ] [MainThread]:   config_options: None
+[0m08:58:26.899439 [info ] [MainThread]:   extensions: ['motherduck']
+[0m08:58:26.899594 [info ] [MainThread]:   settings: {}
+[0m08:58:26.899744 [info ] [MainThread]:   external_root: .
+[0m08:58:26.899908 [info ] [MainThread]:   use_credential_provider: None
+[0m08:58:26.900071 [info ] [MainThread]:   attach: None
+[0m08:58:26.900230 [info ] [MainThread]:   filesystems: None
+[0m08:58:26.900381 [info ] [MainThread]:   remote: None
+[0m08:58:26.900538 [info ] [MainThread]:   plugins: [{'module': 'motherduck', 'alias': None, 'config': None}]
+[0m08:58:26.900692 [info ] [MainThread]:   disable_transactions: False
+[0m08:58:26.900966 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m08:58:26.941881 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m08:58:26.954012 [debug] [MainThread]: Using duckdb connection "debug"
+[0m08:58:26.954329 [debug] [MainThread]: On debug: select 1 as id
+[0m08:58:26.954521 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:58:49.801690 [debug] [MainThread]: SQL status: OK in 22.847 seconds
+[0m08:58:49.804752 [debug] [MainThread]: On debug: Close
+[0m08:58:49.805727 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m08:58:49.806350 [info ] [MainThread]: [32mAll checks passed![0m
+[0m08:58:49.807516 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 23.109646, "process_in_blocks": "0", "process_kernel_time": 0.160568, "process_mem_max_rss": "179780", "process_out_blocks": "24", "process_user_time": 2.237981}
+[0m08:58:49.808102 [debug] [MainThread]: Command `dbt debug` succeeded at 08:58:49.807987 after 23.11 seconds
+[0m08:58:49.808442 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m08:58:49.808785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e13986bb0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e13984d53f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e13972967a0>]}
+[0m08:58:49.809145 [debug] [MainThread]: Flushing usage events
+[0m08:58:50.804289 [debug] [MainThread]: An error was encountered while trying to flush usage events
